@@ -1,0 +1,18 @@
+.square{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.gameboard{
+  border: 2px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  width: 608px;
+  margin-left: auto;
+  margin-right: auto;
+}
