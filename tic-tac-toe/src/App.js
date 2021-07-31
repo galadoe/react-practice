@@ -11,7 +11,9 @@ class App extends Component {
   }
 
   handleClick = () => {
-    alert("You've clicked me!")
+    // alert("You've clicked me!")
+    console.log("it works");
+
   }
 
   render(){
@@ -19,9 +21,9 @@ class App extends Component {
       <>
         <h2>Tic-tac-toe</h2>
         <div className = "gameboard">
-          {this.state.squares.map(value => {
+          {this.state.squares.map((value, index) => {
             return(
-              <Square value = {value}/>
+              <Square value ={value} key = {index} click ={this.handleClick}/>
             )
           })}
         </div>
